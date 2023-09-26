@@ -1,14 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-class CompanyController extends Controller
-{
-    <?php
-
-namespace App\Http\Controllers;
 use App\Models\Company;
 use Illuminate\Http\Request;
 
@@ -107,5 +99,4 @@ class CompanyController extends Controller
         $company->delete();
         return redirect()->route('companies.index')->with('success','Company has been deleted successfully');
     }
-}
 }
