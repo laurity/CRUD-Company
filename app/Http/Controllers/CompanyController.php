@@ -39,6 +39,9 @@ class CompanyController extends Controller
             'name' => 'required',
             'email' => 'required',
             'address' => 'required',
+            'phone' => 'required',
+            'boss' => 'required',
+            'description' => 'required',
         ]);
         
         Company::create($request->post());
@@ -81,6 +84,9 @@ class CompanyController extends Controller
             'name' => 'required',
             'email' => 'required',
             'address' => 'required',
+            'phone' => 'required',
+            'boss' => 'required',
+            'description' => 'required',
         ]);
         
         $company->fill($request->post())->save();

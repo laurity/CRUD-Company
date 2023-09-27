@@ -29,6 +29,10 @@
                     <th>Company Name</th>
                     <th>Company Email</th>
                     <th>Company Address</th>
+                    <th>Company Phone</th>
+                    <th>Company Boss</th>
+                    <th>Description</th>
+                   
                     <th width="280px">Action</th>
                 </tr>
             </thead>
@@ -39,6 +43,9 @@
                         <td>{{ $company->name }}</td>
                         <td>{{ $company->email }}</td>
                         <td>{{ $company->address }}</td>
+                        <td>{{ $company->phone }}</td>
+                        <td>{{ $company->boss }}</td>
+                        <td>{{ $company->description }}</td>
                         <td>
                             <form action="{{ route('companies.destroy',$company->id) }}" method="Post">
                                 <a class="btn btn-primary" href="{{ route('companies.edit',$company->id) }}">Edit</a>
